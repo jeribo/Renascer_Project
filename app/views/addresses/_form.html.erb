@@ -1,0 +1,13 @@
+<%= simple_form_for @address, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :city_id %>
+  <%= f.input :state_id %>
+  <%= f.input :person_id %>
+  <%= f.input :street %>
+  <%= f.input :number %>
+  <%= f.input :complement %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                addresses_path, :class => 'btn' %>
+  </div>
+<% end %>

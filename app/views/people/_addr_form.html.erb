@@ -1,0 +1,9 @@
+<%= form_for [@person, @person.addresses.build] do |f| %>
+  <tr>
+    <td><%= f.text_field :street%></td>
+	  <td><%= f.text_field :number%></td>
+      <td><%= f.text_field :complement%></td>
+	  <td><%= f.submit %></td>
+	  <td></td>
+  </tr>
+<% end %>

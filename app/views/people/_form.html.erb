@@ -1,0 +1,19 @@
+<%= simple_form_for @person, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :federal_id %>
+  <%= f.input :regional_id %>
+  <%= f.input :birthday %>
+  <%= f.input :email %>
+  <%= f.input :mothers_name %>
+  <%= f.input :fathers_name %>
+  <%= f.simple_fields_for :addresses do |addr| %>
+    <%= addr.input :street %>
+    <%= addr.input :number %>
+    <%= addr.input :complement %>
+  <% end %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                people_path, :class => 'btn btn-danger' %>
+  </div>
+<% end %>

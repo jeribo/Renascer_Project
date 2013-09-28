@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  federal_id: MyString
+  regional_id: MyString
+  birthday: 2013-09-22
+  email: MyString
+  mothers_name: MyString
+  fathers_name: MyString
+
+two:
+  name: MyString
+  federal_id: MyString
+  regional_id: MyString
+  birthday: 2013-09-22
+  email: MyString
+  mothers_name: MyString
+  fathers_name: MyString

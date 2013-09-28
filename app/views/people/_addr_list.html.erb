@@ -1,0 +1,7 @@
+	<%= @person.addresses.each do |addr| %>
+	  <tr>
+	  	<td><%= addr.street %></td>
+	  	<td><%= addr.number %></td>
+	  	<td><%= addr.complement %></td>
+	  </tr>
+	<% end %>
